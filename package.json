@@ -1,0 +1,15 @@
+{
+  "name": "videoclub",
+  "version": "1.0.0",
+  "description": "1) crear app.js, index.html, app.css",
+  "main": "app.js",
+  "dependencies": {
+    "@types/angular": "^1.6.56"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

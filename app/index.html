@@ -1,22 +1,31 @@
 <!DOCTYPE html>
-<html ng-app="app" lang="en">
+<html lang="en">
 <head>
+        <base href="http://localhost/videoclub/app/"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular-route.js"></script>
     <script src="app.js"></script>
+    
     <link rel="stylesheet" href="app.css">
-  
+    
     <title>Videoclub</title>
 </head>
-<body ng-controller="appController" >
-
+<body  ng-app="videoclubApp" ng-controller="appController" >
+    
     <div class="color" >
-
+        
         <h1>{{ title | uppercase}}</h1>
-      
+        
     </div>
+    
+    <!-- activación de rutas: -->
+    <div ng-view></div>
+    
+    
+    <!-- COMPONENTES -->
+        <script src="./peliculas/peliculas.js"></script>
 </body>
 </html>

@@ -69,11 +69,12 @@ El otherwise para si no está la ruta que pasamos en la url, redireccionar a lo 
 
  1) Hacemos el archivo de configuración para establecer la ruta que tendrá, el templateUrl que usaremos y el controllador
 
-```   peliculas.config(function($routeProvider){
-    $routeProvider.when("/", {
-        templateUrl: "peliculas/peliculas.html",
+` peliculas.config(function($routeProvider){ 
+    $routeProvider.when("/", { 
+         templateUrl: "peliculas/peliculas.html",
         controller: "peliculasController"
-    });}); ```
+    });}); `
+
 
 2) Le decimos cómo se llama el controller y hacemos la function que tendrá todas las movidas de js que tendrá el componente en cuestión:
 
